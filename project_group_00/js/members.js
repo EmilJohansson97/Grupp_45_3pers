@@ -1,41 +1,41 @@
 function memberThumbnail(member) {
   const thumbnail = `
-  <div class="col-12 ???" id="${member.eid}">
-    <header class="???">
-      <h4 class="???">${member.first_name} ${member.last_name}</h4>
-      <p class="???">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3 thumbnail" id="${member.eid}">
+    <header class="thumbnail-header">
+      <h4 class="thumbnail-title">${member.first_name} ${member.last_name}</h4>
+      <p class="thumbnail-contact">
         <a href="mailto:${member.mail}@du.se" title="Mail ${member.first_name} ${member.last_name}">${member.mail}@du.se</a>
       </p>
     </header>           
-    <div class="???">
-      <picture class="???"> 
+    <div class="thumbnail-image-container">
+      <picture class="thumbnail-picture"> 
         <source
           type="image/webp"
-          srcset="./img/informative/member/${member.id}/webp/${member.id}_256.webp ???,
-                  ./img/informative/member/${member.id}/webp/${member.id}_384.webp ???,
-                  ./img/informative/member/${member.id}/webp/${member.id}_512.webp ???"
-          sizes="(min-width: 996px) ???,
-                 (min-width: 768px) ???,
-                 (min-width: 480px) ???,
-                                    ???">
+          srcset="./img/informative/member/${member.id}/webp/${member.id}_256.webp 256w,
+                  ./img/informative/member/${member.id}/webp/${member.id}_384.webp 384w,
+                  ./img/informative/member/${member.id}/webp/${member.id}_512.webp 512w"
+          sizes="(min-width: 996px) calc((100vw - (20vw * 2) - (10px * 3) - (2px * 8)) / 4),
+       (min-width: 768px) calc((100vw - (19vw * 2) - (10px * 2) - (2px * 4)) / 3),
+       (min-width: 480px) calc((100vw - (15px * 2) - (10px * 1) - (2px * 2)) / 2),
+       calc(100vw - (15px * 2))">
         <source
           type="image/jpg"
-          srcset="./img/informative/member/${member.id}/jpg/${member.id}_256.jpg ???,
-                  ./img/informative/member/${member.id}/jpg/${member.id}_384.jpg ???,
-                  ./img/informative/member/${member.id}/jpg/${member.id}_512.jpg ???"
-          sizes="(min-width: 996px) ???,
-                 (min-width: 768px) ???,
-                 (min-width: 480px) ???,
-                                    ???">
+          srcset="./img/informative/member/${member.id}/jpg/${member.id}_256.jpg 256w,
+                  ./img/informative/member/${member.id}/jpg/${member.id}_384.jpg 384vw,
+                  ./img/informative/member/${member.id}/jpg/${member.id}_512.jpg 512vw"
+          sizes="(min-width: 996px) calc((100vw - (20vw * 2) - (10px * 3) - (2px * 8)) / 4),
+       (min-width: 768px) calc((100vw - (19vw * 2) - (10px * 2) - (2px * 4)) / 3),
+       (min-width: 480px) calc((100vw - (15px * 2) - (10px * 1) - (2px * 2)) / 2),
+       calc(100vw - (15px * 2))">
         <img 
-          class="???"
+          class="thumbnail-img"
           src="./img/informative/member/${member.id}/jpg/${member.id}_512.jpg" 
           width="512"
           height="512"
           alt="${member.alt}"
           itemprop="image">
       </picture>
-      <a class="???" href="./account.html" title="Link to ${member.first_name} ${member.last_name} profile">Go to profile</a>
+      <a class="thumbnail-link" href="./account.html" title="Link to ${member.first_name} ${member.last_name} profile">Go to profile</a>
     </div>
   </div>
   `;
@@ -216,6 +216,5 @@ const members = [
     alt: "Portrait of a young man in a grey hoodie, standing in a contemplative pose with his head tilted back and eyes closed, against a misty backdrop.",
   },
 ];
-
 
 gallery.insertAdjacentHTML("beforeend", addMemberThumbnails(members));
