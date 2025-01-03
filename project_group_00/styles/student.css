@@ -14,22 +14,29 @@
       .figure {
         background-color: inherit;
         position: absolute;
-        right: 15%;
+        right: 12%;
         bottom: 0;
         translate: 50% 50%;
-        padding: 0.6rem;
+        padding: 0.8rem;
         border-radius: 100vw;
+      }
+
+      @media (max-width: 995px) {
+        .figure {
+          right: 8%;
+        }
       }
     }
     .header {
       .title {
-        color: red;
+        color: rgb(232, 228, 228);
         padding: 2rem;
         margin-top: 2rem;
 
         .under-title {
           display: block;
           font-size: 0.8em
+          
         }
       
         }
@@ -43,11 +50,17 @@
         padding: 3rem;
         text-align: right;
         
+        
       }
       .read-more-link {
         background-color: white;
         padding: 1rem;
-        
+        color: rgb(62, 60, 60);
+      }
+      .description-text {
+        line-height: 2.4rem;
+        margin-bottom: -1rem;
+        color: rgb(87, 84, 84);
       }
       
     }
@@ -55,6 +68,7 @@
     }
     .description-text {
       padding: 2rem;
+      margin-top: 1rem;
     }
     .read-more {
       padding: 3rem;
