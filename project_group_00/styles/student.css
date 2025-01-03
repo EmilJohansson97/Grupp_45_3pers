@@ -48,7 +48,52 @@
 }
 
 @layer thumbnail {
+  .thumbnail-img {
+    border-radius: 10px;
+    border: 5px solid hsl(210, 20%, 20%);
+  }
+
+  .thumbnail-link {
+  }
   .thumbnail {
+  }
+
+  @media (max-width: 767px) {
+    .thumbnail-link {
+    }
+    .thumbnail {
+      position: relative;
+    }
+    .thumbnail-title {
+      position: absolute;
+      bottom: 35px;
+      left: 0%;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 10px;
+    }
+    .thumbnail-contact a {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      padding: 10px;
+    }
+    .thumbnail-img {
+      border-bottom: 55px solid hsl(210, 20%, 20%);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .thumbnail-img:hover {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -283,26 +328,5 @@
 
 @layer subgrid {
   .subgrid {
-  }
-}
-
-.thumbnail-img {
-  border-radius: 10px;
-  border: 5px solid hsl(210, 20%, 20%);
-}
-.thumbnail-title {
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-.thumbnail-contact {
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .thumbnail-img {
-    border-bottom: 50px solid hsl(210, 20%, 20%);
   }
 }
