@@ -72,7 +72,7 @@
     
     
    @container detailed-list (width > 60ch) {
-      grid-template-columns: 1.5fr 2fr;
+      grid-template-columns: 1.55fr 2fr;
       padding: 2rem;
       
     }
@@ -92,6 +92,7 @@
 
     @container detailed-list (width > 60ch) {
       text-align: right;
+      margin-inline-end: 2rem;
     }  
   }
 
@@ -203,15 +204,13 @@
       @container main (min-width: 1090px) {
         font-size: 1.6rem;
       }
-      
-
+  
     }
     
     .group {
       display: grid;
-
-  
     }
+    
     .input {
       
       border: 1px solid hsl(var(--hue-1), 60%, 32%);
