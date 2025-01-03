@@ -2,7 +2,9 @@ function memberThumbnail(member) {
   const thumbnail = `
   <div class="col-xxs-12 col-xs-6 col-sm-6 col-md-4 col-lg-3 thumbnail" id="${member.eid}">
     <header class="thumbnail-header">
-      <h4 class="thumbnail-title">${member.first_name} ${member.last_name}</h4>
+         <div class="thumbnail-title-overlay">
+        <h4 class="thumbnail-title">${member.first_name} ${member.last_name}</h4>
+      </div>
       <p class="thumbnail-contact">
         <a href="mailto:${member.mail}@du.se" title="Mail ${member.first_name} ${member.last_name}">${member.mail}@du.se</a>
       </p>
