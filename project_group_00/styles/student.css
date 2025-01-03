@@ -23,7 +23,7 @@
     }
     .header {
       .title {
-        color: white;
+        color: red;
         padding: 2rem;
         margin-top: 2rem;
 
@@ -320,3 +320,4 @@
       border-bottom: 50px solid hsl(210, 20%, 20%);
     }
   }
+
