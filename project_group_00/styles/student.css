@@ -239,3 +239,24 @@
   .subgrid {
   }
 }
+
+.thumbnail-img {
+  border-radius: 10px;
+  border: 5px solid hsl(210, 20%, 20%);
+}
+.thumbnail-title {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.thumbnail-contact {
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .thumbnail-img {
+    border-bottom: 50px solid hsl(210, 20%, 20%);
+  }
+}
