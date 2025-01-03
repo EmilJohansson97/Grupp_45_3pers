@@ -3,7 +3,24 @@
 
 @layer card {
   .card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 
+    .header {
+      background-color: inherit;
+      position: relative;
+      padding: 3rem 1 rem;
+
+      .figure {
+        background-color: inherit;
+        position: absolute;
+        right: 15%;
+        bottom: 0;
+        translate: 50% 50%;
+        padding: 0.5rem;
+        border-radius: 100vw;
+      }
+    }
   }
 }
 
