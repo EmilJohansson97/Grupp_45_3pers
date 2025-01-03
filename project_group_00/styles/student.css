@@ -34,64 +34,32 @@
 
         .under-title {
           display: block;
-<<<<<<< HEAD
-          font-size: 0.8em
-          
-        }
-      
-        }
-      }
-      
-      .description-text {
-        padding: 2rem;
-       
-      }
-      .read-more {
-        padding: 3rem;
-        text-align: right;
-        
-        
-      }
-      .read-more-link {
-        background-color: white;
-        padding: 1rem;
-        color: rgb(62, 60, 60);
-      }
-      .description-text {
-        line-height: 2.4rem;
-        margin-bottom: -1rem;
-        color: rgb(87, 84, 84);
-      }
-      
-    }
-  
-=======
           font-size: 0.8em;
         }
       }
->>>>>>> 384509c3f2ce8ec7191c90e4fe0fe7d40aebe76e
     }
 
     .description-text {
-      padding: 2rem;
+      line-height: 2.4rem;;
       margin-top: 1rem;
+      color: rgb(97, 90, 90);
+      
+}
     }
     .read-more {
-      padding: 3rem;
+      padding: 2.7rem;
       text-align: right;
     }
     .read-more-link {
       background-color: white;
-      padding: 1rem;
+      padding: 0.8rem 1.5rem;
+      color: rgb(87, 81, 81);
     }
+    
   }
-}
-.description-text {
-  padding: 2rem;
-}
-.read-more {
-  padding: 3rem;
-}
+
+
+
 
 @layer thumbnail {
   .thumbnail {
