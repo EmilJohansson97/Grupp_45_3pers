@@ -227,7 +227,7 @@
     .group {
       display: grid;
     }
-    
+
     .input {
       
       border: 1px solid hsl(var(--hue-1), 60%, 32%);
