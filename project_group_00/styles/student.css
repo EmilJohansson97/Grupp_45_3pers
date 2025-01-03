@@ -34,47 +34,15 @@
 
         .under-title {
           display: block;
-<<<<<<< HEAD
-          font-size: 0.8em
-          
-        }
-      
-        }
-      }
-      
-      .description-text {
-        padding: 2rem;
-       
-      }
-      .read-more {
-        padding: 3rem;
-        text-align: right;
-        
-        
-      }
-      .read-more-link {
-        background-color: white;
-        padding: 1rem;
-        color: rgb(62, 60, 60);
-      }
-      .description-text {
-        line-height: 2.4rem;
-        margin-bottom: -1rem;
-        color: rgb(87, 84, 84);
-      }
-      
-    }
-  
-=======
           font-size: 0.8em;
         }
       }
->>>>>>> 384509c3f2ce8ec7191c90e4fe0fe7d40aebe76e
     }
 
     .description-text {
       padding: 2rem;
       margin-top: 1rem;
+      
     }
     .read-more {
       padding: 3rem;
@@ -86,12 +54,7 @@
     }
   }
 }
-.description-text {
-  padding: 2rem;
-}
-.read-more {
-  padding: 3rem;
-}
+
 
 @layer thumbnail {
   .thumbnail {
@@ -159,16 +122,6 @@
       border-color: hsl(var(--hue-1), 60%, 80%);
     }
 
-    [open] {
-      .heading {
-        color: black;
-        background-color: hsl(var(--hue-1), 60%, 80%);
-        padding: 2rem;
-        font-size: 2rem;
-        border-radius: 0.5rem 0.5rem 0 0;
-        border-color: hsl(var(--hue-1), 60%, 80%);
-      }
-
       [open] {
         .heading {
           background-color: hsl(var(--hue-1), 60%, 32%);
@@ -183,7 +136,7 @@
         border-radius: 1rem;
         margin-bottom: 1rem;
       }
-    }
+    
   }
 
   @layer detailed-list {
