@@ -91,6 +91,7 @@
       font-size: 20px;
       text-align: center;
       padding: 10px;
+      font-weight: 100;
     }
     .thumbnail-contact a {
       position: absolute;
@@ -102,6 +103,7 @@
       text-align: center;
       text-decoration: none;
       padding: 10px;
+      font-weight: 100;
     }
     .thumbnail-link {
       display: none;
@@ -145,6 +147,7 @@
       font-size: 20px;
       padding: 10px;
       opacity: 1;
+      font-weight: 100;
     }
     .thumbnail:hover .thumbnail-contact a {
       position: absolute;
@@ -157,6 +160,7 @@
       text-decoration: none;
       padding: 10px;
       opacity: 1;
+      font-weight: 100;
     }
     .thumbnail:hover .thumbnail-title-overlay {
       position: absolute;
