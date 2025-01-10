@@ -121,35 +121,41 @@
 
 @layer accordion {
   .accordion {
+
+    .block {
+      border: 0.15rem;
+      border-style: solid;
+      border-color: hsl(var(--hue-1), 60%, 32%);
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+
     .heading {
       color: black;
-      background-color: hsl(var(--hue-1), 60%, 80%);
+      background-color: hsl(var(--hue-1), 60%, 78%);
       padding: 2rem;
       font-size: 2rem;
-      border-radius: 0.5rem 0.5rem 0 0;
-      border-color: hsl(var(--hue-1), 60%, 80%);
+      border-radius: 0.5rem;
     }
 
       [open] {
         .heading {
           background-color: hsl(var(--hue-1), 60%, 32%);
           color: aliceblue;
+          border-radius: 0.5rem 0.5rem 0 0;
         }
       }
+   
+      
 
-      .block {
-        border: 0.2rem;
-        border-style: solid;
-        border-color: hsl(var(--hue-1), 60%, 32%);
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-      }
+     
     
   }
 
   @layer detailed-list {
     .text {
       padding: 2rem;
+      font-size: 1.7rem;
     }
 
     .detailed-list {
@@ -162,7 +168,7 @@
         text-align: left;
         line-height: 2.5rem;
 
-        @container detailed-list (width > 70ch) {
+        @container detailed-list (width > 60ch) {
           grid-template-columns: auto 2fr;
           padding: 2rem;
         }
@@ -173,12 +179,12 @@
         text-align: left;
         margin-right: 1rem;
 
-        @container detailed-list (width < 70ch) {
+        @container detailed-list (width < 60ch) {
           border-left: 1px solid black;
           padding-left: 1rem;
         }
 
-        @container detailed-list (width > 70ch) {
+        @container detailed-list (width > 60ch) {
           text-align: right;
           margin-inline-end: 2rem;
           white-space: nowrap;
@@ -189,12 +195,12 @@
         margin-bottom: 1rem;
         padding-left: 1rem;
 
-        @container detailed-list (width > 70ch) {
+        @container detailed-list (width > 60ch) {
           border-left: 1px solid black;
           margin-bottom: 2rem;
         }
 
-        @container detailed-list (width < 70ch) {
+        @container detailed-list (width < 60ch) {
           border-left: 1px solid black;
         }
       }
@@ -259,7 +265,7 @@
           color: hsl(var(--hue-1), 60%, 32%);
 
           @container main (min-width: 768px) {
-            font-size: 3.3rem;
+            font-size: 3.1rem;
             padding-top: 3rem;
           }
 
@@ -296,7 +302,7 @@
           font-size: 2rem;
 
           @container main (min-width: 768px) {
-            padding: 0.9rem;
+            padding: 1.2rem;
             margin-bottom: 2.5rem;
           }
 
@@ -314,7 +320,7 @@
           font-size: 2rem;
 
           @container main (min-width: 768px) {
-            padding: 0.9rem;
+            padding: 1.2rem;
           }
           @container main (min-width: 1090px) {
             padding: 1rem;
@@ -347,6 +353,7 @@
       }
     }
   }
+}
 
    @layer subgrid {
      .subgrid {
@@ -359,6 +366,7 @@
          background-color: rgb(25 53 78);
         }
 
+<<<<<<< HEAD
         .a {
           grid-column: 1 / 2;
           }
@@ -415,4 +423,7 @@
     }*/ 
   }  
 }
+=======
+
+>>>>>>> e98c34ffa29d8253008bcace532324a171120b02
 
